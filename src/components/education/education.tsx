@@ -3,7 +3,7 @@ import "./education.css";
 
 const educationList = [
   {
-    school: "S1 Administrasi Bisnis (Business Administration)",
+    school: "Business Administration",
     year: "Academic Foundation",
     description: "Mastering core business operations, organizational scalability, and process efficiency—laying the strategic groundwork for high-ROI enterprise automation.",
   },
