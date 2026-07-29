@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { montserrat } from '@/utils/fonts';
 import Navbar from "@/components/navbar/navbar";
 import Footer from '@/components/footer/footer';
+import { Analytics } from "@vercel/analytics/react";
 
 import "./globals.css";
 
@@ -24,13 +25,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${montserrat.className} antialiased`}
-      >
+    <html lang="en" style={{ scrollBehavior: 'smooth' }}>
+      <body className={`${montserrat.className} antialiased`}>
         <Navbar links={navbarLinks} />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
