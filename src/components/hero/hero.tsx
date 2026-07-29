@@ -36,24 +36,31 @@ export default function Hero() {
                         {' '}
                     </span>
                     
-                    {/* High-conversion CTA & Socials Layout */}
-                    <div style={{ display: 'flex', gap: '20px', alignItems: 'center', marginTop: '30px' }}>
-                        <a className="button" href="https://calendly.com/aliahmadarrosyid/30min" target="_blank" rel="noopener noreferrer">
+                    {/* Perbaikan Tata Letak: Memaksa Flexbox sejajar, membuang kelas .boxes pengganggu */}
+                    <div style={{ display: 'flex', gap: '24px', alignItems: 'center', marginTop: '40px', flexWrap: 'wrap' }}>
+                        <a 
+                            className="button" 
+                            href="https://calendly.com/aliahmadarrosyid/30min" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            style={{ margin: 0 }} // Menimpa margin aneh dari hero.css
+                        >
                             Book an Audit
                         </a>
-                        <div style={{ display: 'flex', gap: '15px' }}>
-                            <a href="https://github.com/alirosyid" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', cursor: 'pointer' }}>
-                                <Github size={28} />
+                        <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
+                            <a href="https://github.com/alirosyid" target="_blank" rel="noopener noreferrer" style={{ color: '#00a99d', transition: '0.2s', display: 'flex' }}>
+                                <Github size={32} />
                             </a>
-                            <a href="https://www.linkedin.com/in/alirosyid-ai-automation" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', cursor: 'pointer' }}>
-                                <Linkedin size={28} />
+                            <a href="https://www.linkedin.com/in/alirosyid-ai-automation" target="_blank" rel="noopener noreferrer" style={{ color: '#00a99d', transition: '0.2s', display: 'flex' }}>
+                                <Linkedin size={32} />
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="px50" />
-            <div className="px50" id="about" />
+            
+            {/* Perbaikan Jarak: Membuang div px50 ganda yang membuat ruang kosong raksasa */}
+            <div id="about" style={{ paddingTop: '60px' }} />
         </>
     );
 }
