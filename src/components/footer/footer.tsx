@@ -33,17 +33,7 @@ export default function Footer() {
       <div className="copyright">
         <div className="top">
           © &nbsp;
-          <span id="copyright-year" /> &nbsp;All Rights Reserved
-        </div>
-        <div className="bottom">
-          Template Developed by{" "}
-          <Link href={"https://github.com/divyanshudhruv"}>
-            &nbsp;<u>@divyanshudhruv</u>&nbsp;
-          </Link>{" "}
-          and{" "}
-          <Link href={"https://github.com/loeclos"}>
-            &nbsp;<u>@loeclos</u>&nbsp;
-          </Link>
+          <span id="copyright-year" /> &nbsp;All Rights Reserved. Engineered by Ali Rosyid.
         </div>
       </div>
     </div>
