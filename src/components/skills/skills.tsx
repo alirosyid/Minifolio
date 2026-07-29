@@ -6,7 +6,7 @@ export default function Skills() {
         <>
             <div id="skills" style={{ marginBottom: "60px" }} />
             <div className="skillsC">
-                <div className="title">     SKILLS ⚙️</div>
+                <div className="title">SKILLS</div>
                 <div className="titleGap" />
                 <div className="titleGap" />
                 <div className="titleSmall">The Tech Stack</div>
@@ -45,8 +45,7 @@ export default function Skills() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            {' '}
-                            View GitHub{' '}
+                            View GitHub
                         </a>
                     </div>
                 </div>
