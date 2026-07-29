@@ -12,18 +12,17 @@ export default function Hero() {
     useEffect(() => {
         const typed = new Typed(el.current, {
             strings: [
-                'the Unknown Developer',
-                'a UI/UX Designer',
-                'a Youtuber',
+                'an Enterprise Systems Architect',
+                'a Private AI Specialist',
+                'an Automation Engineer',
             ],
-            typeSpeed: 150,
-            backSpeed: 60,
-            backDelay: 1000,
+            typeSpeed: 100,
+            backSpeed: 50,
+            backDelay: 1500,
             loop: true,
         });
 
         return () => {
-            // Destroy Typed instance during cleanup to stop animation
             typed.destroy();
         };
     }, []);
@@ -32,7 +31,7 @@ export default function Hero() {
             <div id="hero" className="hero">
                 <div className="container">
                     <div className="icons-container" />
-                    Hi, my name is <span>Your Name</span> <br />
+                    Hi, my name is <span>Ali Rosyid</span> <br />
                     I&apos;m{' '}
                     <span id="role" ref={el}>
                         {' '}
@@ -41,8 +40,6 @@ export default function Hero() {
                         Know more
                     </a>
                     <a className="buttonIcon">
-                        {/* NOTE: onClick is currently removed */}
-                        {/* FIXME: Icons currently do not work */}
                         <div className="boxes">
                             <Twitter />
                         </div>
