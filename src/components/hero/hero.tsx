@@ -34,12 +34,10 @@ export default function Hero() {
                     Hi, my name is <span>Ali Rosyid</span> <br />
                     I&apos;m <span id="role" ref={el}></span>
 
-                    {/* 1. UPGRADE: The Outcome Statement (Fokus pada ROI Klien) */}
                     <p style={{ marginTop: '20px', fontSize: '18px', lineHeight: '1.6', color: '#666', maxWidth: '650px', fontWeight: 400 }}>
                         I help B2B companies eliminate redundant data entry and accelerate operational workflows using autonomous AI pipelines and stateful orchestration.
                     </p>
                     
-                    {/* PERBAIKAN LAYOUT: Hard Override CSS untuk Tombol & Ikon */}
                     <div style={{ display: 'flex', gap: '24px', alignItems: 'center', marginTop: '35px', flexWrap: 'wrap' }}>
                         <a 
                             href="https://calendly.com/aliahmadarrosyid/30min" 
@@ -67,21 +65,20 @@ export default function Hero() {
                             </a>
                         </div>
                     </div>
-
-                    {/* 3. UPGRADE: The Trust Void (Pita Bukti Sosial Industri B2B) */}
-                    <div style={{ marginTop: '60px', paddingTop: '30px', borderTop: '1px solid #eaeaea' }}>
-                        <p style={{ fontSize: '12px', textTransform: 'uppercase', letterSpacing: '2px', color: '#999', marginBottom: '15px' }}>Architecting Systems For</p>
-                        <div style={{ display: 'flex', gap: '30px', flexWrap: 'wrap', color: '#a0a0a0' }}>
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><Building2 size={20} /> <span style={{ fontWeight: 600 }}>B2B Agencies</span></div>
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><Briefcase size={20} /> <span style={{ fontWeight: 600 }}>Healthcare Tech</span></div>
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><Landmark size={20} /> <span style={{ fontWeight: 600 }}>Enterprise SaaS</span></div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
-            {/* Perbaikan Jarak ke About */}
-            <div id="about" style={{ paddingTop: '80px' }} />
+
+            {/* BLOK INI DIPINDAH KELUAR DARI .hero AGAR TIDAK TERKENA CSS TEMPLATE */}
+            <div style={{ width: '100%', maxWidth: '1000px', margin: '0 auto', padding: '0 20px', paddingBottom: '80px', paddingTop: '20px' }}>
+                <p style={{ fontSize: '12px', textTransform: 'uppercase', letterSpacing: '2px', color: '#999', marginBottom: '15px' }}>Architecting Systems For</p>
+                <div style={{ display: 'flex', gap: '30px', flexWrap: 'wrap', color: '#666' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><Building2 size={20} /> <div style={{ fontWeight: 600, fontSize: '15px' }}>B2B Agencies</div></div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><Briefcase size={20} /> <div style={{ fontWeight: 600, fontSize: '15px' }}>Healthcare Tech</div></div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><Landmark size={20} /> <div style={{ fontWeight: 600, fontSize: '15px' }}>Enterprise SaaS</div></div>
+                </div>
+            </div>
+
+            <div id="about" style={{ paddingTop: '20px' }} />
         </>
     );
 }
