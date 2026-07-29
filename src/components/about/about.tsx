@@ -1,4 +1,5 @@
 import { poppins } from '@/utils/fonts';
+import { Terminal, Container, Bot, ShieldCheck } from 'lucide-react';
 import "./about.css";
 
 export default function About() {
@@ -18,15 +19,29 @@ export default function About() {
                         </div>
                     </div>
                     <div className="rightC">
-                        <div className="text">Tech Stack</div>
+                        <div className="text">Core Stack</div>
                         <br />
-                        <div className="textMain">
-                            n8n, Docker &amp; Linux<br />
-                            Python &amp; FastAPI
-                            <br />
-                            Groq, Llama &amp; Private AI
+                        <div className="textMain" style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
+                            {/* Visualisasi Tech Stack dengan Icon */}
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                                <Terminal size={20} color="#00a99d" />
+                                <span>n8n, Python & FastAPI</span>
+                            </div>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                                <Container size={20} color="#00a99d" />
+                                <span>Docker & Linux Infrastructure</span>
+                            </div>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                                <Bot size={20} color="#00a99d" />
+                                <span>Groq, Llama & Private LLMs</span>
+                            </div>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                                <ShieldCheck size={20} color="#00a99d" />
+                                <span>Stateful Caching & OAuth</span>
+                            </div>
                         </div>
-                        <div className="btnC">
+                        
+                        <div className="btnC" style={{ marginTop: '25px' }}>
                             <a
                                 className="btn btn-custom btn-lg btn-about a"
                                 href="https://calendly.com/aliahmadarrosyid/30min"
