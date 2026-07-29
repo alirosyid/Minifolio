@@ -3,19 +3,19 @@ import "./education.css";
 
 const educationList = [
   {
-    school: "School",
-    year: "20xx-20xx",
-    description: "General Studies",
+    school: "S1 Administrasi Bisnis (Business Administration)",
+    year: "Academic Foundation",
+    description: "Mastering core business operations, organizational scalability, and process efficiency—laying the strategic groundwork for high-ROI enterprise automation.",
   },
   {
-    school: "University",
-    year: "20xx-20xx",
-    description: "Diploma in Computer Science",
+    school: "Enterprise Systems Architecture",
+    year: "Technical Specialization",
+    description: "Architecting and deploying high-volume B2B automation pipelines, custom APIs, and remote infrastructure using modern containerized stacks.",
   },
   {
-    school: "More",
-    year: "20xx-20xx",
-    description: "Something here too.",
+    school: "Programmatic Media Engineering",
+    year: "Advanced Integration",
+    description: "Developing end-to-end data-to-video architectures utilizing FFmpeg, Python, and AI-driven asset generation.",
   },
 ];
 
@@ -27,11 +27,11 @@ export default function Education() {
       style={{ marginBottom: "60px" }}
     >
       <div className="eduC">
-        <div className="title">EDUCATION 🏛️</div>
+        <div className="title">BACKGROUND 🏛️</div>
         <div className="titleGap" />
         <div className="titleGap" />
         <div className="titleSmall" id="small-text">
-          My Qualifications
+          Business Strategy Meets AI
         </div>
         <div className="containerGap" />
         <div className="timeline-container">
@@ -62,9 +62,7 @@ export function EducationItem({
   return (
     <div className={`event-item ${poppins.className}`}>
       <div className="empty-space" />
-      {/* TODO: Add reverse for every other element. */}
       <div className="event-icon">
-        {/* TODO: Replace with actual icon */}
         <svg
           id="Layer_1"
           data-name="Layer 1"
@@ -80,7 +78,7 @@ export function EducationItem({
       </div>
       <div className="event-content">
         <p className="text">{title}</p>
-        <p className="event-time">Year: {year}</p>
+        <p className="event-time">Focus: {year}</p>
         <p className="textMain">{description}</p>
       </div>
     </div>
