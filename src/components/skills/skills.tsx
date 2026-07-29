@@ -38,14 +38,17 @@ export default function Skills() {
                         </div>
                         <div className="right">PROGRAMMATIC MEDIA</div>
                     </div>
+                    
+                    {/* UPGRADE: Specific Reference Architecture Link */}
                     <div className="buttonCont">
                         <a
                             className="btn btn-custom btn-lg btn-skills"
-                            href="https://github.com/alirosyid"
+                            href="https://github.com/alirosyid/enterprise-automation-portfolio"
                             target="_blank"
                             rel="noopener noreferrer"
+                            style={{ padding: '15px 35px', fontWeight: 'bold' }}
                         >
-                            View GitHub
+                            View Reference Architecture
                         </a>
                     </div>
                 </div>
