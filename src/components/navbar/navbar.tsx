@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-
 import "./navbar.css";
 
 interface Link {
@@ -22,7 +21,7 @@ export default function Navbar({ links }: { links: Link[] }) {
     
     return (
       <nav className="navbar">
-        <div className="navbar-logo">MINIFOLIO</div>
+        <div className="navbar-logo">ALI ROSYID.</div>
         <div className="navbar-right">
           <ul id="navbarNoDropdown" className={isMenuOpen ? 'active' : ''}>
             {links.map((link) => (
