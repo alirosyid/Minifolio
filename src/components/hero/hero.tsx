@@ -38,7 +38,10 @@ export default function Hero() {
                         I help B2B companies eliminate redundant data entry and accelerate operational workflows using autonomous AI pipelines and stateful orchestration.
                     </p>
                     
-                    <div style={{ display: 'flex', gap: '24px', alignItems: 'center', marginTop: '35px', flexWrap: 'wrap' }}>
+                    {/* UPGRADE: Hard CTA (Audit) + Soft CTA (Blueprint/Case Studies) */}
+                    <div style={{ display: 'flex', gap: '20px', alignItems: 'center', marginTop: '35px', flexWrap: 'wrap' }}>
+                        
+                        {/* HARD CTA */}
                         <a 
                             href="https://calendly.com/aliahmadarrosyid/30min" 
                             target="_blank" 
@@ -56,7 +59,26 @@ export default function Hero() {
                         >
                             Book an Audit
                         </a>
-                        <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
+
+                        {/* SOFT CTA: Jaring Pengaman Leads */}
+                        <a 
+                            href="#services" 
+                            style={{
+                                backgroundColor: 'transparent',
+                                color: '#00a99d',
+                                padding: '12px 28px',
+                                borderRadius: '6px',
+                                border: '2px solid #00a99d',
+                                textDecoration: 'none',
+                                fontWeight: 'bold',
+                                fontSize: '16px',
+                                transition: '0.3s'
+                            }}
+                        >
+                            View AI Blueprint
+                        </a>
+
+                        <div style={{ display: 'flex', gap: '16px', alignItems: 'center', marginLeft: '10px' }}>
                             <a href="https://github.com/alirosyid" target="_blank" rel="noopener noreferrer" style={{ color: '#00a99d', display: 'flex', textDecoration: 'none' }}>
                                 <Github size={32} />
                             </a>
@@ -68,7 +90,6 @@ export default function Hero() {
                 </div>
             </div>
 
-            {/* BLOK INI DIPINDAH KELUAR DARI .hero AGAR TIDAK TERKENA CSS TEMPLATE */}
             <div style={{ width: '100%', maxWidth: '1000px', margin: '0 auto', padding: '0 20px', paddingBottom: '80px', paddingTop: '20px' }}>
                 <p style={{ fontSize: '12px', textTransform: 'uppercase', letterSpacing: '2px', color: '#999', marginBottom: '15px' }}>Architecting Systems For</p>
                 <div style={{ display: 'flex', gap: '30px', flexWrap: 'wrap', color: '#666' }}>
