@@ -4,31 +4,27 @@ import "./about.css";
 export default function About() {
     return (
         <>
-            <div className="aboutC"       style={{ marginBottom: "60px" }}
-            >
-                <div className="title">     ABOUT 🫥</div>
+            <div className="aboutC" style={{ marginBottom: "60px" }}>
+                <div className="title">     ABOUT 🫥</div>
                 <div className="titleGap" />
-                <div className="titleSmall">This and that</div>
+                <div className="titleSmall">The Architect</div>
                 <div className="containerGap" />
                 <div className={`container ${poppins.className}`}>
                     <div className="leftC">
-                        <div className="text">Hi, I&apos;m a developer</div>
+                        <div className="text">Enterprise Systems Architect</div>
                         <br />
                         <div className="textMain">
-                            I design websites. That&apos;s the long and short of it.
-                            UI and UX, Sketch, Design, and pretty decent HTML
-                            and CSS — with Javascript and that nice dabble with
-                            Java.
+                            Enterprises today don&apos;t just need AI; they need AI that is secure, predictable, and fully integrated. I leverage advanced workflow orchestration (n8n, Python), containerized local servers (Docker, FastAPI), and ultra-low-latency LLMs (Llama via Groq). I build the invisible engines that run modern companies on autopilot—ensuring zero data leakage and maximum operational ROI.
                         </div>
                     </div>
                     <div className="rightC">
-                        <div className="text">TL;DR</div>
+                        <div className="text">Tech Stack</div>
                         <br />
                         <div className="textMain">
-                            Web UI &amp; UX <br />
-                            Figma
+                            n8n, Docker &amp; Linux<br />
+                            Python &amp; FastAPI
                             <br />
-                            HTML &amp; CSS
+                            Groq, Llama &amp; Private AI
                         </div>
                         <div className="btnC">
                             <a
@@ -36,7 +32,7 @@ export default function About() {
                                 href="#"
                             >
                                 {' '}
-                                Click Me{' '}
+                                Contact Me{' '}
                             </a>
                             &nbsp;
                             <a
@@ -44,7 +40,6 @@ export default function About() {
                                 style={{ height: 60, width: '0px !important' }}
                                 href="#"
                             >
-                                {/*replace # in href tag to the url of your resume*/}
                                 <i
                                     className="ri-file-download-line"
                                     style={{ fontSize: 24 }}
