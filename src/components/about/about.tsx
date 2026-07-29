@@ -29,10 +29,11 @@ export default function About() {
                         <div className="btnC">
                             <a
                                 className="btn btn-custom btn-lg btn-about a"
-                                href="mailto:ali@alirosyid-architect.cloud"
+                                href="https://calendly.com/aliahmadarrosyid/30min"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
-                                {' '}
-                                Schedule Discovery{' '}
+                                Schedule Discovery
                             </a>
                         </div>
                     </div>
