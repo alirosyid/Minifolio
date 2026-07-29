@@ -5,7 +5,7 @@ export default function About() {
     return (
         <>
             <div className="aboutC" style={{ marginBottom: "60px" }}>
-                <div className="title">     ABOUT 🫥</div>
+                <div className="title">ABOUT</div>
                 <div className="titleGap" />
                 <div className="titleSmall">The Architect</div>
                 <div className="containerGap" />
@@ -29,21 +29,10 @@ export default function About() {
                         <div className="btnC">
                             <a
                                 className="btn btn-custom btn-lg btn-about a"
-                                href="#"
+                                href="mailto:ali@alirosyid-architect.cloud"
                             >
                                 {' '}
-                                Contact Me{' '}
-                            </a>
-                            &nbsp;
-                            <a
-                                className="btn btn-custom-nopadding btn-about btn-resume b"
-                                style={{ height: 60, width: '0px !important' }}
-                                href="#"
-                            >
-                                <i
-                                    className="ri-file-download-line"
-                                    style={{ fontSize: 24 }}
-                                />
+                                Schedule Discovery{' '}
                             </a>
                         </div>
                     </div>
