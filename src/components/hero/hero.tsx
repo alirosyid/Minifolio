@@ -1,7 +1,7 @@
 'use client';
 
 import { useRef, useEffect } from 'react';
-import { Linkedin, Github } from 'lucide-react';
+import { Linkedin, Github, Building2, Briefcase, Landmark } from 'lucide-react';
 import Typed from 'typed.js';
 
 import './hero.css';
@@ -26,41 +26,62 @@ export default function Hero() {
             typed.destroy();
         };
     }, []);
+    
     return (
         <>
             <div id="hero" className="hero">
                 <div className="container">
                     Hi, my name is <span>Ali Rosyid</span> <br />
-                    I&apos;m{' '}
-                    <span id="role" ref={el}>
-                        {' '}
-                    </span>
+                    I&apos;m <span id="role" ref={el}></span>
+
+                    {/* 1. UPGRADE: The Outcome Statement (Fokus pada ROI Klien) */}
+                    <p style={{ marginTop: '20px', fontSize: '18px', lineHeight: '1.6', color: '#666', maxWidth: '650px', fontWeight: 400 }}>
+                        I help B2B companies eliminate redundant data entry and accelerate operational workflows using autonomous AI pipelines and stateful orchestration.
+                    </p>
                     
-                    {/* Perbaikan Tata Letak: Memaksa Flexbox sejajar, membuang kelas .boxes pengganggu */}
-                    <div style={{ display: 'flex', gap: '24px', alignItems: 'center', marginTop: '40px', flexWrap: 'wrap' }}>
+                    {/* PERBAIKAN LAYOUT: Hard Override CSS untuk Tombol & Ikon */}
+                    <div style={{ display: 'flex', gap: '24px', alignItems: 'center', marginTop: '35px', flexWrap: 'wrap' }}>
                         <a 
-                            className="button" 
                             href="https://calendly.com/aliahmadarrosyid/30min" 
                             target="_blank" 
                             rel="noopener noreferrer"
-                            style={{ margin: 0 }} // Menimpa margin aneh dari hero.css
+                            style={{
+                                backgroundColor: '#00a99d',
+                                color: 'white',
+                                padding: '14px 32px',
+                                borderRadius: '6px',
+                                textDecoration: 'none',
+                                fontWeight: 'bold',
+                                fontSize: '16px',
+                                transition: '0.3s'
+                            }}
                         >
                             Book an Audit
                         </a>
                         <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
-                            <a href="https://github.com/alirosyid" target="_blank" rel="noopener noreferrer" style={{ color: '#00a99d', transition: '0.2s', display: 'flex' }}>
+                            <a href="https://github.com/alirosyid" target="_blank" rel="noopener noreferrer" style={{ color: '#00a99d', display: 'flex', textDecoration: 'none' }}>
                                 <Github size={32} />
                             </a>
-                            <a href="https://www.linkedin.com/in/alirosyid-ai-automation" target="_blank" rel="noopener noreferrer" style={{ color: '#00a99d', transition: '0.2s', display: 'flex' }}>
+                            <a href="https://www.linkedin.com/in/alirosyid-ai-automation" target="_blank" rel="noopener noreferrer" style={{ color: '#00a99d', display: 'flex', textDecoration: 'none' }}>
                                 <Linkedin size={32} />
                             </a>
                         </div>
                     </div>
+
+                    {/* 3. UPGRADE: The Trust Void (Pita Bukti Sosial Industri B2B) */}
+                    <div style={{ marginTop: '60px', paddingTop: '30px', borderTop: '1px solid #eaeaea' }}>
+                        <p style={{ fontSize: '12px', textTransform: 'uppercase', letterSpacing: '2px', color: '#999', marginBottom: '15px' }}>Architecting Systems For</p>
+                        <div style={{ display: 'flex', gap: '30px', flexWrap: 'wrap', color: '#a0a0a0' }}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><Building2 size={20} /> <span style={{ fontWeight: 600 }}>B2B Agencies</span></div>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><Briefcase size={20} /> <span style={{ fontWeight: 600 }}>Healthcare Tech</span></div>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><Landmark size={20} /> <span style={{ fontWeight: 600 }}>Enterprise SaaS</span></div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            
-            {/* Perbaikan Jarak: Membuang div px50 ganda yang membuat ruang kosong raksasa */}
-            <div id="about" style={{ paddingTop: '60px' }} />
+            {/* Perbaikan Jarak ke About */}
+            <div id="about" style={{ paddingTop: '80px' }} />
         </>
     );
 }
