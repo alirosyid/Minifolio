@@ -1,11 +1,11 @@
 'use client';
 
 import { useRef, useEffect } from 'react';
-import { Twitter, Linkedin, Instagram, Link } from 'lucide-react';
+import { Linkedin, Github } from 'lucide-react';
 import Typed from 'typed.js';
 
 import './hero.css';
- 
+
 export default function Hero() {
     const el = useRef(null);
 
@@ -36,21 +36,15 @@ export default function Hero() {
                     <span id="role" ref={el}>
                         {' '}
                     </span>
-                    <a className="button" href="#about">
-                        Know more
+                    <a className="button" href="mailto:ali@alirosyid-architect.cloud">
+                        Book an Audit
                     </a>
                     <a className="buttonIcon">
-                        <div className="boxes">
-                            <Twitter />
+                        <div className="boxes" onClick={() => window.open('https://github.com/alirosyid', '_blank')} style={{ cursor: 'pointer' }}>
+                            <Github />
                         </div>
-                        <div className="boxes">
+                        <div className="boxes" onClick={() => window.open('https://www.linkedin.com/in/alirosyid-ai-automation', '_blank')} style={{ cursor: 'pointer' }}>
                             <Linkedin />
-                        </div>
-                        <div className="boxes">
-                            <Instagram />
-                        </div>
-                        <div className="boxes">
-                            <Link />
                         </div>
                     </a>
                 </div>
