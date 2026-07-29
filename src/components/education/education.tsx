@@ -27,7 +27,7 @@ export default function Education() {
       style={{ marginBottom: "60px" }}
     >
       <div className="eduC">
-        <div className="title">BACKGROUND 🏛️</div>
+        <div className="title">BACKGROUND</div>
         <div className="titleGap" />
         <div className="titleGap" />
         <div className="titleSmall" id="small-text">
