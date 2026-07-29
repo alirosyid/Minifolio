@@ -1,53 +1,52 @@
-import { HTML5, Unity, NodeJS, Swift } from '@/components/ui/icons';
-
+import { Workflow, Cpu, Database, MonitorPlay } from 'lucide-react';
 import "./skills.css";
 
 export default function Skills() {
     return (
         <>
-            <div id="skills"       style={{ marginBottom: "60px" }}
-            />
+            <div id="skills" style={{ marginBottom: "60px" }} />
             <div className="skillsC">
-                <div className="title">     SKILLS 😎</div>
+                <div className="title">     SKILLS ⚙️</div>
                 <div className="titleGap" />
                 <div className="titleGap" />
-                <div className="titleSmall">What I Know</div>
+                <div className="titleSmall">The Tech Stack</div>
                 <div className="containerGap" />
                 <div className="titleGap" />
                 <div className="titleGap" />
                 <div className="container">
                     <div className="boxes">
                         <div className="left">
-                            <HTML5 />
+                            <Workflow size={40} />
                         </div>
-                        <div className="right">FRONTEND DEVELOPMENT</div>
+                        <div className="right">AI WORKFLOW ORCHESTRATION</div>
                     </div>
                     <div className="boxes">
                         <div className="left">
-                            <NodeJS />
+                            <Cpu size={40} />
                         </div>
-                        <div className="right">BACKEND DEVELOPMENT</div>
+                        <div className="right">PRIVATE LLM INTEGRATION</div>
                     </div>
                     <div className="boxes">
                         <div className="left">
-                            <Unity />
+                            <Database size={40} />
                         </div>
-                        <div className="right">GAME DEVELOPMENT</div>
+                        <div className="right">BACKEND & INFRASTRUCTURE</div>
                     </div>
                     <div className="boxes">
                         <div className="left">
-                            <Swift />
+                            <MonitorPlay size={40} />
                         </div>
-                        <div className="right">APP DEVELOPMENT</div>
+                        <div className="right">PROGRAMMATIC MEDIA</div>
                     </div>
                     <div className="buttonCont">
                         <a
                             className="btn btn-custom btn-lg btn-skills"
-                            href="https://github.com"
+                            href="https://github.com/alirosyid"
                             target="_blank"
+                            rel="noopener noreferrer"
                         >
                             {' '}
-                            View more{' '}
+                            View GitHub{' '}
                         </a>
                     </div>
                 </div>
