@@ -12,9 +12,9 @@ export default function Hero() {
     useEffect(() => {
         const typed = new Typed(el.current, {
             strings: [
-                'an Enterprise Systems Architect',
-                'a Private AI Specialist',
-                'an Automation Engineer',
+                'an Enterprise Systems Architect.',
+                'a Private AI Specialist.',
+                'an Automation Engineer.',
             ],
             typeSpeed: 100,
             backSpeed: 50,
@@ -30,23 +30,26 @@ export default function Hero() {
         <>
             <div id="hero" className="hero">
                 <div className="container">
-                    <div className="icons-container" />
                     Hi, my name is <span>Ali Rosyid</span> <br />
                     I&apos;m{' '}
                     <span id="role" ref={el}>
                         {' '}
                     </span>
-                    <a className="button" href="mailto:ali@alirosyid-architect.cloud">
-                        Book an Audit
-                    </a>
-                    <a className="buttonIcon">
-                        <div className="boxes" onClick={() => window.open('https://github.com/alirosyid', '_blank')} style={{ cursor: 'pointer' }}>
-                            <Github />
+                    
+                    {/* High-conversion CTA & Socials Layout */}
+                    <div style={{ display: 'flex', gap: '20px', alignItems: 'center', marginTop: '30px' }}>
+                        <a className="button" href="https://calendly.com/aliahmadarrosyid/30min" target="_blank" rel="noopener noreferrer">
+                            Book an Audit
+                        </a>
+                        <div style={{ display: 'flex', gap: '15px' }}>
+                            <a href="https://github.com/alirosyid" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', cursor: 'pointer' }}>
+                                <Github size={28} />
+                            </a>
+                            <a href="https://www.linkedin.com/in/alirosyid-ai-automation" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', cursor: 'pointer' }}>
+                                <Linkedin size={28} />
+                            </a>
                         </div>
-                        <div className="boxes" onClick={() => window.open('https://www.linkedin.com/in/alirosyid-ai-automation', '_blank')} style={{ cursor: 'pointer' }}>
-                            <Linkedin />
-                        </div>
-                    </a>
+                    </div>
                 </div>
             </div>
             <div className="px50" />
