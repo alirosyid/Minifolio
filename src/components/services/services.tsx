@@ -11,10 +11,9 @@ export default function Services() {
       <div className="containerGap" />
       <div className="titleGap" />
       
-      {/* 2. UPGRADE: Visual Workflow Diagram (Arsitektur Pipeline B2B) */}
       <div style={{ maxWidth: '900px', margin: '0 auto 50px auto', background: '#f8f9fa', padding: '35px', borderRadius: '12px', border: '1px solid #eaeaea' }}>
         <div style={{ textAlign: 'center', fontSize: '13px', color: '#666', marginBottom: '30px', letterSpacing: '1px', textTransform: 'uppercase', fontWeight: 600 }}>
-          Standard AI Orchestration Pipeline
+          Standard Agentic RAG Pipeline
         </div>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '15px' }}>
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', color: '#00a99d' }}>
@@ -24,7 +23,7 @@ export default function Services() {
             <ArrowRight size={24} color="#ccc" />
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', color: '#00a99d' }}>
                 <Workflow size={36} />
-                <span style={{ fontSize: '13px', marginTop: '10px', fontWeight: 600, color: '#333' }}>n8n Router</span>
+                <span style={{ fontSize: '13px', marginTop: '10px', fontWeight: 600, color: '#333' }}>Agentic Router</span>
             </div>
             <ArrowRight size={24} color="#ccc" />
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', color: '#00a99d' }}>
@@ -44,16 +43,15 @@ export default function Services() {
         </div>
       </div>
 
-      {/* Daftar Studi Kasus */}
       <div className="container">
         <div className="serviceItem">
           <div className="serviceIcon">
             <Workflow size={40} />
           </div>
           <div className="serviceText">
-            <div className="text">Stateful Lead Orchestration</div>
+            <div className="text">Stateful AI Orchestration</div>
             <div className="textMain">
-              Engineered custom n8n caching nodes to track 1,000+ endpoints in real-time memory, reducing redundant API processing costs by 40% and eliminating rate limits.
+              Engineered deterministic caching layers to track 1,000+ endpoints in real-time memory, bypassing LLM context limits, reducing redundant API processing costs by 40%, and eliminating rate limits.
             </div>
           </div>
         </div>
@@ -63,9 +61,9 @@ export default function Services() {
             <BrainCircuit size={40} />{" "}
           </div>
           <div className="serviceText">
-            <div className="text">Autonomous LLM Engine</div>
+            <div className="text">Enterprise RAG & LLM Engine</div>
             <div className="textMain">
-              Migrated corporate outreach to ultra-fast Llama models via Groq. Delivered context-aware, hyper-personalized sales agents at scale, achieving a 3x faster response time with zero human intervention.
+              Migrated corporate workflows to ultra-fast Llama models via Groq. Delivered context-aware, hyper-personalized data pipelines at scale, achieving deterministic outputs with zero AI hallucinations.
             </div>
           </div>
         </div>
@@ -77,7 +75,7 @@ export default function Services() {
           <div className="serviceText">
             <div className="text">Private AI Infrastructure</div>
             <div className="textMain">
-              Deployed secure, containerized backends (FastAPI/Docker) paired with custom OAuth routing to keep sensitive corporate data strictly isolated and 100% compliant.
+              Deployed secure, containerized backends (FastAPI/Docker) paired with custom OAuth routing to keep sensitive corporate data strictly isolated and 100% PII compliant.
             </div>
           </div>
         </div>
