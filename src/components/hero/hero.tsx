@@ -12,13 +12,13 @@ export default function Hero() {
     useEffect(() => {
         const typed = new Typed(el.current, {
             strings: [
+                'an Agentic AI Engineer.',
+                'a Backend AI Developer.',
                 'an Enterprise Systems Architect.',
-                'a Private AI Specialist.',
-                'an Automation Engineer.',
             ],
-            typeSpeed: 100,
-            backSpeed: 50,
-            backDelay: 1500,
+            typeSpeed: 70,
+            backSpeed: 40,
+            backDelay: 2000,
             loop: true,
         });
 
@@ -31,17 +31,18 @@ export default function Hero() {
         <>
             <div id="hero" className="hero">
                 <div className="container">
-                    Hi, my name is <span>Ali Rosyid</span> <br />
-                    I&apos;m <span id="role" ref={el}></span>
+                    <h1 style={{ fontSize: '2.5rem', fontWeight: 'bold', margin: '0 0 10px 0', color: '#333' }}>
+                        Hi, my name is <span style={{ color: '#00a99d' }}>Ali Rosyid</span>
+                    </h1>
+                    <h2 style={{ fontSize: '1.8rem', fontWeight: 'normal', margin: '0', color: '#555' }}>
+                        I&apos;m <span id="role" ref={el} style={{ fontWeight: 'bold', color: '#333' }}></span>
+                    </h2>
 
-                    <p style={{ marginTop: '20px', fontSize: '18px', lineHeight: '1.6', color: '#666', maxWidth: '650px', fontWeight: 400 }}>
-                        I help B2B companies eliminate redundant data entry and accelerate operational workflows using autonomous AI pipelines and stateful orchestration.
+                    <p style={{ marginTop: '20px', fontSize: '18px', lineHeight: '1.6', color: '#666', maxWidth: '700px', fontWeight: 400 }}>
+                        I architect stateful LLM pipelines, RAG systems, and zero-trust AI infrastructures for B2B enterprises. I build the deterministic backend engines that eliminate hallucination risks and run modern companies on autopilot.
                     </p>
                     
-                    {/* UPGRADE: Hard CTA (Audit) + Soft CTA (Blueprint/Case Studies) */}
                     <div style={{ display: 'flex', gap: '20px', alignItems: 'center', marginTop: '35px', flexWrap: 'wrap' }}>
-                        
-                        {/* HARD CTA */}
                         <a 
                             href="https://calendly.com/aliahmadarrosyid/30min" 
                             target="_blank" 
@@ -60,7 +61,6 @@ export default function Hero() {
                             Book an Audit
                         </a>
 
-                        {/* SOFT CTA: Jaring Pengaman Leads */}
                         <a 
                             href="#services" 
                             style={{
