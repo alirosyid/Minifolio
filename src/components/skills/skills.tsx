@@ -18,28 +18,27 @@ export default function Skills() {
                         <div className="left">
                             <Workflow size={40} />
                         </div>
-                        <div className="right">AI WORKFLOW ORCHESTRATION</div>
+                        <div className="right">AGENTIC AI SYSTEMS</div>
                     </div>
                     <div className="boxes">
                         <div className="left">
                             <Cpu size={40} />
                         </div>
-                        <div className="right">PRIVATE LLM INTEGRATION</div>
+                        <div className="right">RAG & VECTOR DATABASES</div>
                     </div>
                     <div className="boxes">
                         <div className="left">
                             <Database size={40} />
                         </div>
-                        <div className="right">BACKEND & INFRASTRUCTURE</div>
+                        <div className="right">BACKEND INFRASTRUCTURE</div>
                     </div>
                     <div className="boxes">
                         <div className="left">
                             <MonitorPlay size={40} />
                         </div>
-                        <div className="right">PROGRAMMATIC MEDIA</div>
+                        <div className="right">API INTEGRATION & ROUTING</div>
                     </div>
                     
-                    {/* UPGRADE: Specific Reference Architecture Link */}
                     <div className="buttonCont">
                         <a
                             className="btn btn-custom btn-lg btn-skills"
