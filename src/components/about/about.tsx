@@ -12,32 +12,31 @@ export default function About() {
                 <div className="containerGap" />
                 <div className={`container ${poppins.className}`}>
                     <div className="leftC">
-                        <div className="text">Enterprise Systems Architect</div>
+                        <div className="text">Backend AI Engineer</div>
                         <br />
                         <div className="textMain">
-                            Enterprises today don&apos;t just need AI; they need AI that is secure, predictable, and fully integrated. I leverage advanced workflow orchestration (n8n, Python), containerized local servers (Docker, FastAPI), and ultra-low-latency LLMs (Llama via Groq). I build the invisible engines that run modern companies on autopilot—ensuring zero data leakage and maximum operational ROI.
+                            Enterprises today don&apos;t just need AI wrappers; they need intelligent pipelines that are secure, deterministic, and fully integrated with their proprietary data. I engineer robust backend architectures utilizing Python, containerized environments, and Agentic frameworks. I build the invisible stateful engines that ensure zero data leakage (PII compliant) and maximum operational ROI.
                         </div>
                     </div>
                     <div className="rightC">
-                        <div className="text">Core Stack</div>
+                        <div className="text">Core Architecture Stack</div>
                         <br />
                         <div className="textMain" style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
-                            {/* Visualisasi Tech Stack dengan Icon */}
                             <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                                 <Terminal size={20} color="#00a99d" />
-                                <span>n8n, Python & FastAPI</span>
-                            </div>
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                                <Container size={20} color="#00a99d" />
-                                <span>Docker & Linux Infrastructure</span>
+                                <span>Python, Node.js & FastAPI</span>
                             </div>
                             <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                                 <Bot size={20} color="#00a99d" />
-                                <span>Groq, Llama & Private LLMs</span>
+                                <span>LangChain, RAG & Vector DBs</span>
+                            </div>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                                <Container size={20} color="#00a99d" />
+                                <span>Docker & Cloud Infrastructure</span>
                             </div>
                             <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                                 <ShieldCheck size={20} color="#00a99d" />
-                                <span>Stateful Caching & OAuth</span>
+                                <span>n8n Routing & Stateful Caching</span>
                             </div>
                         </div>
                         
