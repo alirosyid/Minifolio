@@ -18,36 +18,36 @@ export default function Skills() {
                         <div className="left">
                             <Workflow size={40} />
                         </div>
-                        <div className="right">AGENTIC AI SYSTEMS</div>
+                        <div className="right">B2B PIPELINE AUTOMATION</div>
                     </div>
                     <div className="boxes">
                         <div className="left">
                             <Cpu size={40} />
                         </div>
-                        <div className="right">RAG & VECTOR DATABASES</div>
+                        <div className="right">ENTERPRISE RAG & VECTOR DBS</div>
                     </div>
                     <div className="boxes">
                         <div className="left">
                             <Database size={40} />
                         </div>
-                        <div className="right">BACKEND INFRASTRUCTURE</div>
+                        <div className="right">EVENT-DRIVEN BACKEND (FASTAPI)</div>
                     </div>
                     <div className="boxes">
                         <div className="left">
                             <MonitorPlay size={40} />
                         </div>
-                        <div className="right">API INTEGRATION & ROUTING</div>
+                        <div className="right">DOCKER & CLOUD ORCHESTRATION</div>
                     </div>
                     
                     <div className="buttonCont">
                         <a
                             className="btn btn-custom btn-lg btn-skills"
-                            href="https://github.com/alirosyid/enterprise-automation-portfolio"
+                            href="https://github.com/alirosyid"
                             target="_blank"
                             rel="noopener noreferrer"
                             style={{ padding: '15px 35px', fontWeight: 'bold' }}
                         >
-                            View Reference Architecture
+                            View GitHub Repositories
                         </a>
                     </div>
                 </div>
