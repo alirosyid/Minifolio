@@ -12,9 +12,9 @@ export default function Hero() {
     useEffect(() => {
         const typed = new Typed(el.current, {
             strings: [
-                'an Agentic AI Engineer.',
-                'a Backend AI Developer.',
-                'an Enterprise Systems Architect.',
+                'an AI Backend Architect.',
+                'an Automation Engineer.',
+                'an Event-Driven Systems Architect.',
             ],
             typeSpeed: 70,
             backSpeed: 40,
@@ -39,7 +39,7 @@ export default function Hero() {
                     </h2>
 
                     <p style={{ marginTop: '20px', fontSize: '18px', lineHeight: '1.6', color: '#666', maxWidth: '700px', fontWeight: 400 }}>
-                        I architect stateful LLM pipelines, RAG systems, and zero-trust AI infrastructures for B2B enterprises. I build the deterministic backend engines that eliminate hallucination risks and run modern companies on autopilot.
+                        I architect event-driven microservices and stateful B2B automation pipelines. I bridge the gap between raw LLMs and production-grade business infrastructure, ensuring zero-trust security, strict deduplication, and algorithmic efficiency.
                     </p>
                     
                     <div style={{ display: 'flex', gap: '20px', alignItems: 'center', marginTop: '35px', flexWrap: 'wrap' }}>
@@ -75,7 +75,7 @@ export default function Hero() {
                                 transition: '0.3s'
                             }}
                         >
-                            View AI Blueprint
+                            View Architecture
                         </a>
 
                         <div style={{ display: 'flex', gap: '16px', alignItems: 'center', marginLeft: '10px' }}>
