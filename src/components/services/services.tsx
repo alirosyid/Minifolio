@@ -13,32 +13,32 @@ export default function Services() {
       
       <div style={{ maxWidth: '900px', margin: '0 auto 50px auto', background: '#f8f9fa', padding: '35px', borderRadius: '12px', border: '1px solid #eaeaea' }}>
         <div style={{ textAlign: 'center', fontSize: '13px', color: '#666', marginBottom: '30px', letterSpacing: '1px', textTransform: 'uppercase', fontWeight: 600 }}>
-          Standard Agentic RAG Pipeline
+          Event-Driven RAG & Automation Pipeline
         </div>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '15px' }}>
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', color: '#00a99d' }}>
                 <Webhook size={36} />
-                <span style={{ fontSize: '13px', marginTop: '10px', fontWeight: 600, color: '#333' }}>Data Ingestion</span>
-            </div>
-            <ArrowRight size={24} color="#ccc" />
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', color: '#00a99d' }}>
-                <Workflow size={36} />
-                <span style={{ fontSize: '13px', marginTop: '10px', fontWeight: 600, color: '#333' }}>Agentic Router</span>
-            </div>
-            <ArrowRight size={24} color="#ccc" />
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', color: '#00a99d' }}>
-                <BrainCircuit size={36} />
-                <span style={{ fontSize: '13px', marginTop: '10px', fontWeight: 600, color: '#333' }}>LLM Processing</span>
+                <span style={{ fontSize: '13px', marginTop: '10px', fontWeight: 600, color: '#333' }}>API Gateway</span>
             </div>
             <ArrowRight size={24} color="#ccc" />
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', color: '#00a99d' }}>
                 <Database size={36} />
-                <span style={{ fontSize: '13px', marginTop: '10px', fontWeight: 600, color: '#333' }}>Stateful Cache</span>
+                <span style={{ fontSize: '13px', marginTop: '10px', fontWeight: 600, color: '#333' }}>Redis Broker</span>
+            </div>
+            <ArrowRight size={24} color="#ccc" />
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', color: '#00a99d' }}>
+                <BrainCircuit size={36} />
+                <span style={{ fontSize: '13px', marginTop: '10px', fontWeight: 600, color: '#333' }}>Celery Workers</span>
+            </div>
+            <ArrowRight size={24} color="#ccc" />
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', color: '#00a99d' }}>
+                <Workflow size={36} />
+                <span style={{ fontSize: '13px', marginTop: '10px', fontWeight: 600, color: '#333' }}>Vector DB</span>
             </div>
             <ArrowRight size={24} color="#ccc" />
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', color: '#00a99d' }}>
                 <MonitorSmartphone size={36} />
-                <span style={{ fontSize: '13px', marginTop: '10px', fontWeight: 600, color: '#333' }}>Client Output</span>
+                <span style={{ fontSize: '13px', marginTop: '10px', fontWeight: 600, color: '#333' }}>Secure Output</span>
             </div>
         </div>
       </div>
@@ -51,7 +51,7 @@ export default function Services() {
           <div className="serviceText">
             <div className="text">Stateful AI Orchestration</div>
             <div className="textMain">
-              Engineered deterministic caching layers to track 1,000+ endpoints in real-time memory, bypassing LLM context limits, reducing redundant API processing costs by 40%, and eliminating rate limits.
+              Engineered closed-loop outbound engines (n8n, Llama-3). Designed custom RAM hijacking and deterministic caching to strictly prevent duplicate outreach, saving clients 100+ hours of manual SDR data entry monthly.
             </div>
           </div>
         </div>
@@ -63,7 +63,7 @@ export default function Services() {
           <div className="serviceText">
             <div className="text">Enterprise RAG & LLM Engine</div>
             <div className="textMain">
-              Migrated corporate workflows to ultra-fast Llama models via Groq. Delivered context-aware, hyper-personalized data pipelines at scale, achieving deterministic outputs with zero AI hallucinations.
+              Deployed scalable vector search pipelines (FastAPI, Qdrant) with asynchronous processing. Implemented parallel grading microservices to systematically block LLM hallucinations and enforce strict PII redaction.
             </div>
           </div>
         </div>
@@ -75,7 +75,7 @@ export default function Services() {
           <div className="serviceText">
             <div className="text">Private AI Infrastructure</div>
             <div className="textMain">
-              Deployed secure, containerized backends (FastAPI/Docker) paired with custom OAuth routing to keep sensitive corporate data strictly isolated and 100% PII compliant.
+              Architected decoupled, event-driven backends using Redis and Celery. Bypassed API timeout bottlenecks and reduced query latency by shifting heavy LLM inference to background worker nodes within secure Docker networks.
             </div>
           </div>
         </div>
