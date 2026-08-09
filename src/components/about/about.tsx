@@ -12,10 +12,10 @@ export default function About() {
                 <div className="containerGap" />
                 <div className={`container ${poppins.className}`}>
                     <div className="leftC">
-                        <div className="text">Backend AI Engineer</div>
+                        <div className="text">AI Backend & Automation Architect</div>
                         <br />
                         <div className="textMain">
-                            Enterprises today don&apos;t just need AI wrappers; they need intelligent pipelines that are secure, deterministic, and fully integrated with their proprietary data. I engineer robust backend architectures utilizing Python, containerized environments, and Agentic frameworks. I build the invisible stateful engines that ensure zero data leakage (PII compliant) and maximum operational ROI.
+                            Enterprises today don&apos;t just need AI wrappers; they need intelligent pipelines that are secure, deterministic, and fully integrated with their proprietary data. I engineer robust backend architectures utilizing Python, FastAPI, Redis, and containerized environments. I build the invisible event-driven engines that ensure zero data leakage (PII compliant) and eliminate manual operational bottlenecks.
                         </div>
                     </div>
                     <div className="rightC">
@@ -24,19 +24,19 @@ export default function About() {
                         <div className="textMain" style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
                             <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                                 <Terminal size={20} color="#00a99d" />
-                                <span>Python, Node.js & FastAPI</span>
+                                <span>Python, FastAPI & Celery</span>
                             </div>
                             <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                                 <Bot size={20} color="#00a99d" />
-                                <span>LangChain, RAG & Vector DBs</span>
-                            </div>
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                                <Container size={20} color="#00a99d" />
-                                <span>Docker & Cloud Infrastructure</span>
+                                <span>PostgreSQL & Redis (Stateful Memory)</span>
                             </div>
                             <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                                 <ShieldCheck size={20} color="#00a99d" />
-                                <span>n8n Routing & Stateful Caching</span>
+                                <span>Qdrant & LangChain (Enterprise RAG)</span>
+                            </div>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                                <Container size={20} color="#00a99d" />
+                                <span>Docker, Linux & n8n Routing</span>
                             </div>
                         </div>
                         
